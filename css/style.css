@@ -1,0 +1,122 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: ;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:hover{
+	text-decoration: none;
+}
+/* Main CSS Stop */
+/* Isotope & Masonry Section Start */
+.project-bg-1 {background-image: url(../img/bg-1.jpg);}
+.project-bg-2 {background-image: url(../img/bg-2.jpg);}
+.project-bg-3 {background-image: url(../img/bg-3.jpg);}
+.project-bg-4 {background-image: url(../img/bg-4.jpg);}
+.project-bg-5 {background-image: url(../img/bg-5.jpg);}
+.project-bg-6 {background-image: url(../img/bg-6.jpg);}
+.project-bg-7 {background-image: url(../img/bg-7.jpg);}
+.project-bg-8 {background-image: url(../img/bg-8.jpg);}
+.project-bg-9 {background-image: url(../img/bg-9.jpg);}
+.section-padding {
+  padding: 80px 0;
+}
+.project-titles {
+	margin: 0 0 50px;
+	list-style: none;
+	text-align: center;
+}
+.project-titles li {
+	display: inline-block;
+	padding-right: 20px;
+	cursor: pointer;
+	background: lightgoldenrodyellow;
+	padding: 5px 12px;
+	border: 2px dashed teal;
+	border-radius: 15px;
+
+}
+.single-project-item a, .single-project-item span,{
+  color: #01e9e3;
+}
+.single-project-item {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  margin-bottom: 15px;
+}
+/* Row & Column Custom Padding margin start*/
+.row.project-list .col-md-4 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+.row.project-list {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+/* Row & Column Custom Padding margin stop*/
+.project-hover {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+  transition: .3s;
+}
+.project-hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: .5;
+  z-index: -1;
+}
+.project-hover a {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 20px;
+}
+.project-hover h4 {
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.project-hover h4 span {
+  display: block;
+  font-size: 80%;
+  margin-top: 10px;
+}
+.single-project-item:hover .project-hover {
+  opacity: 1;
+}
+/* Select image with nth child and give height */
+.row.project-list .col-md-4:nth-child(2) .single-project-item,
+.row.project-list .col-md-4:nth-child(5) .single-project-item,
+.row.project-list .col-md-4:nth-child(6) .single-project-item{
+	height: 615px;
+}
+/* Select image with nth child and give height */
+/*Active Class Color*/
+.project-titles li.active{
+	color:#01e9e3;
+	background: white;
+}
+/*Active Class Color*/
+/* Isotope & Masonry Section Stop */

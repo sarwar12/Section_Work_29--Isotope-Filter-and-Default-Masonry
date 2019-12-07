@@ -1,0 +1,2 @@
+### Isotope & Filter Plugin
+	https://isotope.metafizzy.co/
